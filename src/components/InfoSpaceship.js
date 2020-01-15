@@ -1,4 +1,3 @@
-import './CharactersCard.css'
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -24,19 +23,19 @@ const InfoSpaceship = (params) => {
     console.log('ship', ship)
 
     return (
-          <div className="GameCard">
+
+        <div className="GameCard">
+        <Link className='home' to='/'> <p>Home</p></Link>
            <h2>{ship.name}'s profile :</h2>
            <p>Model : {ship.model}</p>
            <p>Manufacturer : {ship.manufacturer}</p>
-           {/* <p>Pilots: {ship.gender}</p>
-           {ship.starships ? 
-           ship.starships.map((ship,index) => {
-               
-               return <Link className="title" to={`/character/${url}`}>
-                   <p></p>
+           {ship.pilots ? 
+           ship.pilots.map((pilot,index) => {
+               return <Link className="title" to={`/character/${pilot}`}>
+                   <p> Pilot {index + 1}</p>
                </Link>
             })
-            : ''} */}
+            : ''}
 
         </div>
       );

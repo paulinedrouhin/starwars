@@ -1,44 +1,27 @@
-.GamesGlobal {
+h2 {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;}
+
+.Characters-Display {
+    display: flex;
+    margin: 0 1vw;
+    border: 2px solid black;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color : lightgray;
+    color: yellow;
+}
+
+.Characters-container {
     width:80%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 30px;
-   }
-   
-.title {
-    margin-top: 2em;
-    color: white;
-    font-size: 2em;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-.RatingButton{
-    background-color:white;
-    color: grey;
-    margin: 1em auto 3em 1em;
-    padding: 0.6em;
-    border: none;
-    width:40%;
-    font-size: 1.2em;
-    cursor: pointer;
-}
-
-.RatingButton:hover{
-    background-color:rebeccapurple;
-    color:white;
-}
-
-
-.ScreenShots{
-    margin:auto;
-}
-
-.Game__screenshots {
-    width: 60%;
-    height:auto;
-    margin-top:2em;
 }

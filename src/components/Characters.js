@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom";
-import CharactersCard from './CharactersCard'
-import './Characters'
+import './Characters.css'
 
 
 const Characters = () => {
@@ -26,14 +25,13 @@ const Characters = () => {
 
   return (
     <div>
-          <h1> Star Wars Characters</h1>
       <div>
         <form className="ApiRequest-form">
           <input
             id="title"
             name="title"
             className="ApiRequest-input"
-            list="food"
+            list="character"
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -42,31 +40,21 @@ const Characters = () => {
           />
         </form>
       </div>
-      
-      {title ? filteredList.map((character, index) => {
+      <div className='Characters-container'>
+        {title ? filteredList.map((character, index) => {
           const url = `${character.url}`
-          return <Link className="title" to={`/character/${url}`}>
-          <CharactersCard
-          key={index}
-          id={index}
-          name={character.name}
-          image={character.url} />
+          return <Link to={`/character/${url}`}>
+            <h2 className='Characters-Display'>{character.name}</h2>
+
           </Link>
-      }) :
-        characters.map((character, index) => {
-          const url = `${character.url}`
-          return <Link className="title" to={`/character/${url}`}>
-          <CharactersCard
-            key={index}
-            id={index}
-            name={character.name}
-            image={character.url} />
-       
-
-      </Link>
-       })}
-
-
+        }) :
+          characters.map((character, index) => {
+            const url = `${character.url}`
+            return <Link className="title" to={`/character/${url}`}>
+              <h2 className='Characters-Display'> {character.name}</h2>
+            </Link>
+          })}
+      </div>
     </div>
 
   )

@@ -1,4 +1,3 @@
-import './CharactersCard.css'
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -25,6 +24,7 @@ const InfoCharacters = (params) => {
 
     return (
         <div className="GameCard">
+
            <h2>{character.name}'s profile :</h2>
            <p>Eye color : {character.eye_color}</p>
            <p>Birth year : {character.birth_year}</p>
