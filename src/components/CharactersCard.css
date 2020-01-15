@@ -1,0 +1,53 @@
+
+.GameCard {
+    box-shadow: 5px 5px 5px rgb(38, 41, 41);
+    background-color: white;
+    padding:1em;
+    width:auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+   }
+   
+   
+   .GameCard img {
+       width:auto;
+       height:190px;
+   }
+   
+   
+   
+   .GameCard h2, .GameCard h4 {  
+       color:grey;
+   
+   }
+   
+   .GameCard h3 {
+       margin: auto;
+       border: solid 2px grey;
+       color:grey;
+       padding:0.3em;
+    }
+   
+   
+   html {
+       background-color: grey;
+   }
+   
+   .DeleteButton {
+       background-color:grey;
+       color: white;
+       margin: 1em auto 1em auto;
+       padding: 0.6em;
+       border: none;
+       width:40%;
+       font-size: 1.2em;
+       cursor: pointer;
+   }
+   
+   
+   .DeleteButton:hover {
+       background-color:red
+   }
