@@ -1,8 +1,11 @@
 .App {
     background-image: url(https://www.asgard.gg/wp-content/uploads/2017/11/star-wars.jpg);
-    /* background-color: black; */
-    height: 200vw;
-    width: auto;
+    background-color: black;
+    background-position: cover;
+    background-size: 100vw;
+    min-height: 130vh;
+    background-repeat: no-repeat;
+    width: 99vw;
 }
 
 .App-logo {

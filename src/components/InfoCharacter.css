@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Exo+2&display=swap');
+
+.GameCard {
+    width:80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    border: 2px solid yellow;
+    background-color : black;
+
+
+}
+
+.GameCard h2 {
+    display: flex;
+    margin: 0 1vw;
+    text-shadow: -2px 0 yellow, 0 2px yellow, 2px 0 yellow, 0 -2px yellow;
+    border-radius: 1%;
+    justify-content: center;
+    margin: 2vw;
+    color: black;
+    font-size: 5vw;
+}
+
+.GameCard p {
+    font-family: 'Bangers', cursive;
+    font-size: 3vw;
+    display: flex;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-radius: 1%;
+    justify-content: center;
+    color: Yellow;
+    margin: 0;
+
+}
+
+.link:hover {
+    color : blue;
+}

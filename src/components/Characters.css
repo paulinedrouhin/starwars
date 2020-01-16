@@ -1,27 +1,63 @@
 h2 {
     text-decoration: none;
 }
+
 a {
-    text-decoration: none;}
+    text-decoration: none;
+}
 
 .Characters-Display {
     display: flex;
     margin: 0 1vw;
-    border: 2px solid black;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
+    font-size: 2vw;
+    border: 2px solid yellow;
+    text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+    border-radius: 1%;
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color : lightgray;
-    color: yellow;
+    background-color: black;
+    color: black;
 }
 
 .Characters-container {
-    width:80%;
+    width: 80%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 30px;
+}
+
+.Characters-ApiRequest input {
+    background-color: white;
+    border: 2px outset grey;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1em;
+    box-shadow: 5px 5px 1px #000;
+}
+
+.Characters-formContainer {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 992px) {
+    .Characters-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .Characters-ApiRequest input {
+        font-size: 1.85em;
+    }
+    .Characters-formContainer {
+        top: 50px;
+        
+    }
 }

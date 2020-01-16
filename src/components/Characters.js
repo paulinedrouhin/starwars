@@ -7,7 +7,7 @@ import './Characters.css'
 const Characters = () => {
 
   const [characters, setCharacters] = useState([]);
-  const [title, setTitle] = useState()
+  const [title, setTitle] = useState('')
 
   useEffect(() => {
     const axiosData = async url => {
@@ -20,13 +20,13 @@ const Characters = () => {
 
   }, []);
 
-  // liste filtrée
-  const filteredList = characters.filter(item => item.name.toLowerCase().includes(title))
+  // liste filtrée /// 
+  const filteredList = characters.filter(item => item.name.toLowerCase().includes(title.toLowerCase()) )
 
   return (
     <div>
-      <div>
-        <form className="ApiRequest-form">
+      <div className="Characters-formContainer">
+        <form className="Characters-ApiRequest">
           <input
             id="title"
             name="title"
