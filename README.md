@@ -1,3 +1,6 @@
+Netlify link to website : https://thirsty-babbage-2f0fca.netlify.com
+
+
 _ _ _ _ _ INTRODUCTION _ _ _ _ _
 
 Le site https://swapi.co est une grande base de données sur Star Wars. Il vous met à disposition une API qui vous permet de récupérer des informations rapidement et facilement en format JSON, seul l’API est disponible, le site ne propose pas de navigation dans sa base de données.
